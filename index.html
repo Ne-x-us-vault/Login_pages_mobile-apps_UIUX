@@ -292,13 +292,12 @@
       box-shadow: 0 0 0 4px rgba(255, 126, 179, 0.15);
     }
 
-    .field input:focus ~ .input-icon,
-    .field input:focus + .input-icon {
+    .field input:focus ~ .input-icon {
       opacity: 1;
       transform: translateY(-50%) scale(1.2);
     }
 
-    .field input:focus + .toggle-pw {
+    .input-wrap.focused .toggle-pw {
       opacity: 1;
     }
 
@@ -788,6 +787,14 @@
       cardWrapper.style.transform = '';
       cardWrapper.style.transition = 'transform 0.7s cubic-bezier(0.4, 0, 0.2, 1)';
       if (flipped) cardWrapper.classList.add('flipped');
+    });
+
+    /* ─── input-wrap focus class for toggle-pw visibility ─── */
+    document.querySelectorAll('.field input').forEach(input => {
+      const wrap = input.closest('.input-wrap');
+      if (!wrap) return;
+      input.addEventListener('focus', () => wrap.classList.add('focused'));
+      input.addEventListener('blur', () => wrap.classList.remove('focused'));
     });
 
     /* ─── password toggle ─── */
