@@ -25,7 +25,7 @@ A beautiful Flutter login/signup page with animations, inspired by modern UI/UX 
 
 1. Clone the repository:
    ```bash
-   git clone https://github.com/yourusername/login_pages_mobile_apps_uiux.git
+   git clone https://github.com/Ne-x-us-vault/Login_pages_mobile-apps_UIUX.git
    ```
 
 2. Navigate to the project directory:
