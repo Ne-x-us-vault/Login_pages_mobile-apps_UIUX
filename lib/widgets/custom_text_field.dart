@@ -60,7 +60,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
                 boxShadow: _isFocused
                     ? [
                         BoxShadow(
-                          color: AppColors.pink.withOpacity(0.15),
+                          color: AppColors.pink.withValues(alpha: 0.15),
                           blurRadius: 16,
                           spreadRadius: 0,
                         ),
@@ -88,7 +88,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
                       widget.icon,
                       color: _isFocused
                           ? AppColors.pink
-                          : AppColors.textLight.withOpacity(0.55),
+                          : AppColors.textLight.withValues(alpha: 0.55),
                       size: 22,
                     ),
                   ),
@@ -100,7 +100,7 @@ class _CustomTextFieldState extends State<CustomTextField> {
                                 : Icons.visibility_rounded,
                             color: _isFocused
                                 ? AppColors.textLight
-                                : AppColors.textLight.withOpacity(0.35),
+                                : AppColors.textLight.withValues(alpha: 0.35),
                             size: 22,
                           ),
                           onPressed: () {

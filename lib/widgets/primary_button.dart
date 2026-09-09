@@ -1,4 +1,3 @@
-import 'dart:math';
 import 'package:flutter/material.dart';
 import '../theme/app_colors.dart';
 import 'sparkle_effect.dart';
@@ -55,7 +54,7 @@ class _PrimaryButtonState extends State<PrimaryButton> {
           borderRadius: BorderRadius.circular(14),
           boxShadow: [
             BoxShadow(
-              color: AppColors.pink.withOpacity(0.35),
+              color: AppColors.pink.withValues(alpha: 0.35),
               blurRadius: 18,
               offset: const Offset(0, 4),
             ),

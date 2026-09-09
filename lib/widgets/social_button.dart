@@ -22,10 +22,10 @@ class SocialButton extends StatelessWidget {
           duration: const Duration(milliseconds: 200),
           padding: const EdgeInsets.symmetric(vertical: 12),
           decoration: BoxDecoration(
-            color: Colors.white.withOpacity(0.5),
+            color: Colors.white.withValues(alpha: 0.5),
             borderRadius: BorderRadius.circular(14),
             border: Border.all(
-              color: AppColors.lavender.withOpacity(0.4),
+              color: AppColors.lavender.withValues(alpha: 0.4),
               width: 2,
             ),
           ),

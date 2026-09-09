@@ -77,7 +77,7 @@ class _AnimatedBlobsState extends State<AnimatedBlobs>
                   height: sizes[i],
                   decoration: BoxDecoration(
                     shape: BoxShape.circle,
-                    color: AppColors.blobColors[i].withOpacity(0.5),
+                    color: AppColors.blobColors[i].withValues(alpha: 0.5),
                   ),
                 ),
               );

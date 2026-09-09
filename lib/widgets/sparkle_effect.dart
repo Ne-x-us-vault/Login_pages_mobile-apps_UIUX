@@ -80,7 +80,7 @@ class _SparklePainter extends CustomPainter {
   void paint(Canvas canvas, Size size) {
     for (final sparkle in sparkles) {
       final paint = Paint()
-        ..color = sparkle.color.withOpacity(1 - progress)
+        ..color = sparkle.color.withValues(alpha: 1 - progress)
         ..style = PaintingStyle.fill;
 
       final position = Offset(

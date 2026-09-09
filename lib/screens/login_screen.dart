@@ -139,7 +139,7 @@ class _LoginScreenState extends State<LoginScreen>
             style: TextStyle(
               fontSize: 14,
               fontWeight: FontWeight.w600,
-              color: AppColors.textLight.withOpacity(0.8),
+              color: AppColors.textLight.withValues(alpha: 0.8),
             ),
           ),
           const SizedBox(height: 28),
@@ -195,13 +195,11 @@ class _LoginScreenState extends State<LoginScreen>
               SocialButton(
                 text: 'Google',
                 icon: Icons.g_mobiledata_rounded,
-                onPressed: () {},
               ),
               const SizedBox(width: 12),
               SocialButton(
                 text: 'Apple',
                 icon: Icons.apple_rounded,
-                onPressed: () {},
               ),
             ],
           ),
@@ -214,7 +212,7 @@ class _LoginScreenState extends State<LoginScreen>
                 style: TextStyle(
                   fontSize: 14,
                   fontWeight: FontWeight.w600,
-                  color: AppColors.textLight.withOpacity(0.8),
+                  color: AppColors.textLight.withValues(alpha: 0.8),
                 ),
               ),
               GestureDetector(
@@ -259,7 +257,7 @@ class _LoginScreenState extends State<LoginScreen>
               style: TextStyle(
                 fontSize: 14,
                 fontWeight: FontWeight.w600,
-                color: AppColors.textLight.withOpacity(0.8),
+                color: AppColors.textLight.withValues(alpha: 0.8),
               ),
             ),
             const SizedBox(height: 28),
@@ -308,13 +306,11 @@ class _LoginScreenState extends State<LoginScreen>
                 SocialButton(
                   text: 'Google',
                   icon: Icons.g_mobiledata_rounded,
-                  onPressed: () {},
                 ),
                 const SizedBox(width: 12),
                 SocialButton(
                   text: 'Apple',
                   icon: Icons.apple_rounded,
-                  onPressed: () {},
                 ),
               ],
             ),
@@ -327,7 +323,7 @@ class _LoginScreenState extends State<LoginScreen>
                   style: TextStyle(
                     fontSize: 14,
                     fontWeight: FontWeight.w600,
-                    color: AppColors.textLight.withOpacity(0.8),
+                    color: AppColors.textLight.withValues(alpha: 0.8),
                   ),
                 ),
                 GestureDetector(
@@ -359,7 +355,7 @@ class _LoginScreenState extends State<LoginScreen>
               gradient: LinearGradient(
                 colors: [
                   Colors.transparent,
-                  AppColors.lavender.withOpacity(0.6),
+                  AppColors.lavender.withValues(alpha: 0.6),
                   Colors.transparent,
                 ],
               ),
@@ -384,7 +380,7 @@ class _LoginScreenState extends State<LoginScreen>
               gradient: LinearGradient(
                 colors: [
                   Colors.transparent,
-                  AppColors.lavender.withOpacity(0.6),
+                  AppColors.lavender.withValues(alpha: 0.6),
                   Colors.transparent,
                 ],
               ),
@@ -446,22 +442,22 @@ class _GlassCard extends StatelessWidget {
       ),
       padding: const EdgeInsets.symmetric(horizontal: 36, vertical: 44),
       decoration: BoxDecoration(
-        color: Colors.white.withOpacity(0.82),
+        color: Colors.white.withValues(alpha: 0.82),
         borderRadius: BorderRadius.circular(28),
         border: Border.all(
-          color: Colors.white.withOpacity(0.6),
+          color: Colors.white.withValues(alpha: 0.6),
           width: 1.5,
         ),
         boxShadow: [
           BoxShadow(
             color: AppColors.shadow,
             blurRadius: 4,
-            offset: const Offset(0, 2),
+            offset: Offset(0, 2),
           ),
           BoxShadow(
             color: AppColors.shadowStrong,
             blurRadius: 40,
-            offset: const Offset(0, 12),
+            offset: Offset(0, 12),
           ),
         ],
       ),

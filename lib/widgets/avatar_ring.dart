@@ -57,7 +57,7 @@ class _AvatarRingState extends State<AvatarRing>
               ),
               boxShadow: [
                 BoxShadow(
-                  color: AppColors.pink.withOpacity(0.3),
+                  color: AppColors.pink.withValues(alpha: 0.3),
                   blurRadius: 20,
                   spreadRadius: 2,
                 ),
