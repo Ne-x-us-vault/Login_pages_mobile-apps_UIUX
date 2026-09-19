@@ -190,13 +190,13 @@ class _LoginScreenState extends State<LoginScreen>
           const SizedBox(height: 22),
           _buildDivider('or continue with'),
           const SizedBox(height: 16),
-          Row(
+          const Row(
             children: [
               SocialButton(
                 text: 'Google',
                 icon: Icons.g_mobiledata_rounded,
               ),
-              const SizedBox(width: 12),
+              SizedBox(width: 12),
               SocialButton(
                 text: 'Apple',
                 icon: Icons.apple_rounded,
@@ -241,7 +241,7 @@ class _LoginScreenState extends State<LoginScreen>
         child: Column(
           mainAxisSize: MainAxisSize.min,
           children: [
-            AvatarRing(emoji: '🧐'),
+            const AvatarRing(emoji: '🧐'),
             const SizedBox(height: 12),
             const Text(
               'Create account',
@@ -301,13 +301,13 @@ class _LoginScreenState extends State<LoginScreen>
             const SizedBox(height: 22),
             _buildDivider('or sign up with'),
             const SizedBox(height: 16),
-            Row(
+            const Row(
               children: [
                 SocialButton(
                   text: 'Google',
                   icon: Icons.g_mobiledata_rounded,
                 ),
-                const SizedBox(width: 12),
+                SizedBox(width: 12),
                 SocialButton(
                   text: 'Apple',
                   icon: Icons.apple_rounded,
@@ -448,7 +448,7 @@ class _GlassCard extends StatelessWidget {
           color: Colors.white.withValues(alpha: 0.6),
           width: 1.5,
         ),
-        boxShadow: [
+        boxShadow: const [
           BoxShadow(
             color: AppColors.shadow,
             blurRadius: 4,
